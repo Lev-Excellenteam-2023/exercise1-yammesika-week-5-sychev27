@@ -14,4 +14,4 @@ def join(*args, sep="-"):
     return new_list + args[amount_of_args - 1]
 
 
-print(join([1]))
+print(join([1])) #

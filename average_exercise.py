@@ -6,4 +6,4 @@ def avg(*args):
     return sum_of_args / len(args)
 
 
-print(avg(5, 2))
+print(avg(5, 2)) #

@@ -15,7 +15,7 @@ def get_recipe_price(prices, optionals=[], **ingredients):
         for ingredient, amount in ingredients.items():
             price += (amount / 100) * list_of_prices[ingredient]
 
-    print(price)
+    print(price) #
 
 
 get_recipe_price({'chocolate': 18, 'milk': 8}, optionals=['milk'], chocolate=300)
