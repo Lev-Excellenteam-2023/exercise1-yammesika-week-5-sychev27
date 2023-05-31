@@ -1,4 +1,4 @@
-def join(*args, sep="-"):
+def my_join(*args, sep="-"):
     if not args:
         return []
     elif len(args) == 1:
@@ -7,11 +7,12 @@ def join(*args, sep="-"):
     amount_of_args = len(args)
     new_list = []
 
-    for i in range(0, amount_of_args - 1):
-        new_list += args[i]
+    for index in range(0, amount_of_args - 1):
+        new_list += args[index]
         new_list.append(sep)
 
     return new_list + args[amount_of_args - 1]
 
 
-print(join([1]))
+if __name__ == "__main__":
+    print(my_join([1]))

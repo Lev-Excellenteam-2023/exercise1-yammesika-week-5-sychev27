@@ -10,13 +10,13 @@ def get_date():
             day = int(input('Enter a day '))
             date1 = datetime.date(year, month, day)
             flag = False
-        except:
-            print("Incorrect date")
+        except ValueError:
+            print("Incorrect date. Please try again.")
 
     return date1
 
 
-def main():
+def test_of_get_date():
     today_date = datetime.date.today()
 
     flag = True
@@ -33,4 +33,4 @@ def main():
 
 
 if __name__ == "__main__":
-     main()
+     test_of_get_date()

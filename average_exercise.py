@@ -6,4 +6,5 @@ def avg(*args):
     return sum_of_args / len(args)
 
 
-print(avg(5, 2))
+if __name__ == "__main__":
+    print(avg(5, 2))

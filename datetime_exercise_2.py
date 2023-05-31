@@ -20,9 +20,9 @@ def get_two_dates():
 
 def main():
     day_name = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-    date_1, date_2 = get_two_dates()
+    start_date, end_date = get_two_dates()
 
-    random_date = radar.random_date(date_1, date_2)
+    random_date = radar.random_date(start_date, end_date)
     day = random_date.weekday()
 
     print("The random date is: " + str(random_date))
